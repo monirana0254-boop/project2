@@ -10,7 +10,7 @@ const LoginForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:3353/log-in", {
+      const response = await fetch("https://project2-tyk3.onrender.com/log-in", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),

@@ -178,7 +178,7 @@ const Agents = () => {
     });
 
     try {
-      const response = await fetch("http://localhost:3353/uploadProperty", {
+      const response = await fetch("https://project2-tyk3.onrender.com/uploadProperty", {
         method: "POST",
         headers: {
           "Authorization": localStorage.getItem("token"),

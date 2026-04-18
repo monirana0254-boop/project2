@@ -42,7 +42,7 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:3353/propertyget")
+    fetch("https://project2-tyk3.onrender.com/propertyget")
       .then((response) => response.json())
       .then((data) => {
         setProperties(Array.isArray(data) ? data : [data]);

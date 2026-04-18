@@ -27,7 +27,7 @@ const SignIn = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:3353/sign-in", {
+      const response = await fetch("https://project2-tyk3.onrender.com/sign-in", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -57,7 +57,7 @@ const SignIn = () => {
       return;
     }
     try {
-      const response = await fetch("http://localhost:3353/otp-register", {
+      const response = await fetch("https://project2-tyk3.onrender.com/otp-register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: formData.email }),

@@ -9,7 +9,7 @@ const PropertyDetails = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:3353/propertyget")
+    fetch("https://project2-tyk3.onrender.com/propertyget")
       .then(response => response.json())
       .then(data => {
         const foundProperty = Array.isArray(data) ? data.find(prop => prop._id === id) : null;
